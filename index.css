@@ -1,0 +1,265 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /* body { */
+    
+    body {
+        /* font-family: 'Poppins', sans-serif; */
+        font-weight: 100%;
+    }
+    /* Nav bar and nalist  */
+    
+    .navbar {
+        background-color: beige;
+        display: flex;
+        position: relative;
+        top: 0;
+    }
+    /* .navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    /* width: 100vw; */
+    /* z-index: -1; */
+    /*this helps the content to comeforward and makes it clearly visible*/
+    /* opacity: 0.4; */
+    /*changing the opacity of the color and the column/*
+} */
+    
+    .navlist {
+        width: 50%;
+        /* background-color: rgb(158, 158, 255); */
+        display: flex;
+        padding: 18px 4px;
+        margin: 3px 13px;
+    }
+    
+    .navlist ul li {
+        display: inline;
+    }
+    
+    .navlist li a {
+        padding: 3px 8px;
+        text-decoration: none;
+        color: black;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .navlist li a:hover {
+        color: gray;
+    }
+    
+    .rightnav {
+        width: 50%;
+        text-align: right;
+        /* background-color: crimson; */
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    /* Search and search btn  */
+    
+    #search {
+        font-family: 'Poppins', sans-serif;
+        border: 0px aliceblue;
+        border-radius: 10px;
+        padding: 2px 0px;
+        margin: 2px 2px;
+        margin: 10px 12px;
+        width: 160px;
+    }
+    
+    .btn-search {
+        font-family: 'Poppins', sans-serif;
+        border: 0px;
+        border-radius: 6px;
+        padding: 2px 7px;
+        margin: 2px 0px;
+        cursor: pointer;
+    }
+    
+    .btn-search:hover {
+        background-color: black;
+        color: white;
+        transition: 0.9s;
+    }
+    /* This  is home section  */
+    
+    .home {
+        display: flex;
+        flex-direction: column;
+        padding: 3px 200px;
+        justify-content: center;
+        align-items: center;
+        height: 641px;
+        top: 0;
+    }
+    
+    .home::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+        background: url(food.jpg) no-repeat center center/cover;
+        /*this makes the image perfectly fit*/
+    }
+    /* logo and logo img  */
+    
+    .logo {
+        display: flex;
+        margin: 2px 2px;
+        padding: 4px 1px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo img {
+        width: 100px;
+        display: inline;
+    }
+    
+    .home h1 {
+        text-align: center;
+        color: rgb(44, 33, 33);
+        font-family: 'Bonheur Royale', cursive;
+    }
+    /*second section of the website*/
+    
+    .services {
+        margin: 34px;
+        display: flex;
+    }
+    
+    .services .box {
+        border: 2px solid brown;
+        /* width: 20%; */
+        padding: 34px 11px;
+        margin: 3px 21px;
+        border-radius: 23px;
+        background-color: rgb(255, 199, 199);
+        transition: 1s;
+    }
+    
+    .services .box:hover {
+        box-shadow: 2px 2px 15px 2px gray;
+        cursor: pointer;
+    }
+    
+    .services .box img {
+        height: 126px;
+        display: block;
+        margin: auto;
+    }
+    /*This is the section of clients*/
+    
+    .ourclients {
+        /* height: 344px; */
+    }
+    
+    .clients {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .clients img {
+        height: 124px;
+        padding: 34px;
+    }
+    
+    .clients-items {
+        padding: 2px 32px;
+        /* background-color: rgb(189, 145, 145); */
+        margin: 17px 43px;
+    }
+    /* utilty class */
+    
+    .h-primary {
+        font-size: 3.8rem;
+        padding: 12px;
+        text-align: center;
+        font-family: 'Bonheur Royale', cursive;
+        margin: 13px;
+    }
+    
+    .p-primary {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+    
+    .center {
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .h-secondary {
+        font-size: medium;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    /*this is contact form*/
+    
+    .form {
+        display: flex;
+        border: 1px solid gray;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0dcdc;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        flex-direction: column;
+    }
+    
+    form:hover {
+        box-shadow: 2px 2px 2px 2px #997e7e;
+    }
+    
+    .first {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid gray;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 43vh;
+        width: 26%;
+    }
+    
+    .firstname {
+        padding: 4px 5px;
+        border: 1px;
+        border-radius: 23px;
+        width: 136px;
+        transition: 1s;
+        box-shadow: 7px 2px 3px 0 #997e7e;
+    }
+    
+    .submit {
+        border: 3px;
+        border-radius: 40px;
+        width: 112px;
+        padding: 3px;
+        margin: 13px;
+    }
+    
+    .submit:hover {
+        transition: 1s;
+        background: black;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .h1contact {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 100;
+    }
+    /*thisi is the foooter section*/
+    
+    .copyright {
+        padding: 10px 11px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
